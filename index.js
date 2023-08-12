@@ -71,11 +71,22 @@
 
 // 5) javascript es6 map
 
-function doubleNumbers(makeDouble) {
-  const result = makeDouble.map(number => number * 2);
-  return result;
+// function doubleNumbers(makeDouble) {
+//   const result = makeDouble.map(number => number * 2);
+//   return result;
+// }
+// const numbers = [1, 2, 3, 4, 5];
+
+// console.log(doubleNumbers(numbers)); // Output: [2, 4, 6, 8, 10]
+
+class MathUtility{
+    static multiply(num1, num2){
+         const result = num1 * num2
+         return result;
+    }
 }
-const numbers = [1, 2, 3, 4, 5];
 
-console.log(doubleNumbers(numbers)); // Output: [2, 4, 6, 8, 10]
+console.log(MathUtility.multiply(5, 3)); // Output: 15
 
+
+console.log(MathUtility.multiply(2, 8)); // Output: 16git 

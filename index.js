@@ -1,51 +1,57 @@
-// // 1) javascript For in loop
+// 1) javascript For in loop
 
-let person ={
-    // name: "Shihab",
-    // age: 28,
-    // gender: "male",
-    // occupation:"Job holder",
-}
+// const person ={
+//     name: "Shihab",
+//     age: 28,
+//     gender: "Male",
+//     occupation:"Job holder",
+// }
 
-const printObjectProperties = (properties)=>{
-    if(properties.keys === 0){
-        console.log("Object is empty")
-    }
+// const printObjectProperties = (properties)=>{
+//     if(Object.keys(properties).length === 0){
+//         console.log("Object is empty")
+//     }
     
-    for (const property in properties) {
+//     for (const property in properties) {
         
-         console.log(`${property } : ${properties[property]}`)
+//          console.log(`${property } : ${properties[property]}`)
 
         
-    }
+//     }
 
-}
+// }
 
-printObjectProperties(person)
+// printObjectProperties(person)
 
-// function printObjectProperties(obj){
+    
 
-//     if(Object.keys(obj).length===0){
-//         console.log('Object is empty');
-//         return
-//     }
+// 2) javascript function returns
+
+ function findMaxNumber (params){
     
-//       for(property in obj){
-//         console.log(`${property}:${obj[property]}`);
-    
-//     }
-    
-//     }
-    
-//     const person={
-//         name: "Leo Messi",
-//         age:36,
-//         prof: "Footballer"
-//     }
-//     const pp={
-    
-//     }
-    
-//     printObjectProperties(person);
-    
-    
+     if(params.length === 0){
+        return null
+     }
+
+     const maxNum = Math.max(...params)
+        return maxNum
+     
+
+ }
+ const numbers1 = [10, 20, 5, 30, 25];
+
+ console.log(findMaxNumber(numbers1)); // Output: 30
+
+ const numbers2 = [5, 15, 7];
+
+
+ console.log(findMaxNumber(numbers2)); // Output: 15
+ 
+ 
+  
+ 
+ 
+ const emptyArray = [];
+ 
+ 
+ console.log(findMaxNumber(emptyArray)); // Output: null

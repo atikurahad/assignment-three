@@ -48,7 +48,6 @@
 
 //   function mergeArrays (array1 , array2){
 
-
 //     let newArr = [...array1, ...array2]
 //     return newArr
 //   }
@@ -60,13 +59,23 @@
 
 // 4) javascript arrow function
 
-const calculateSquare = (number) =>{
+// const calculateSquare = (number) =>{
 
-    const square = number * number;
-   return square;
+//     const square = number * number;
+//    return square;
+// }
+
+// console.log(calculateSquare(5)); // Output: 25
+
+// console.log(calculateSquare(8)); // Output: 64
+
+// 5) javascript es6 map
+
+function doubleNumbers(makeDouble) {
+  const result = makeDouble.map(number => number * 2);
+  return result;
 }
+const numbers = [1, 2, 3, 4, 5];
 
-console.log(calculateSquare(5)); // Output: 25
+console.log(doubleNumbers(numbers)); // Output: [2, 4, 6, 8, 10]
 
-
-console.log(calculateSquare(8)); // Output: 64

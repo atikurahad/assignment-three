@@ -46,14 +46,27 @@
 
 // 3) javascript Spread Operator
 
-  function mergeArrays (array1 , array2){
+//   function mergeArrays (array1 , array2){
 
 
-    let newArr = [...array1, ...array2]
-    return newArr
-  }
-  const arr1 = [1, 2, 3];
+//     let newArr = [...array1, ...array2]
+//     return newArr
+//   }
+//   const arr1 = [1, 2, 3];
 
-const arr2 = [4, 5, 6];
+// const arr2 = [4, 5, 6];
 
-console.log(mergeArrays(arr1,arr2));
+// console.log(mergeArrays(arr1,arr2));
+
+// 4) javascript arrow function
+
+const calculateSquare = (number) =>{
+
+    const square = number * number;
+   return square;
+}
+
+console.log(calculateSquare(5)); // Output: 25
+
+
+console.log(calculateSquare(8)); // Output: 64
